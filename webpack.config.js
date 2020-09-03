@@ -1,11 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
-module.exports = (_, argv) => ({
-  output: {
-    publicPath: argv.mode === "development" ? "http://localhost:8081/" : "https://module-federation-example-component-library.vercel.app",
-  },
-
+module.exports = {
   resolve: {
     extensions: [".jsx", ".js"],
   },
@@ -40,4 +36,4 @@ module.exports = (_, argv) => ({
       template: "./src/index.html",
     }),
   ],
-})
+}
