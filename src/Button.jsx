@@ -11,7 +11,7 @@ const style1 = {
   fontSize: "16px"
 }
 
-const style2= {
+const style2 = {
   backgroundColor: "#4CAF50",
   border: "none",
   color: "white",
@@ -24,4 +24,4 @@ const style2= {
 }
 
 
-export default (props) => <button {...props} style={style1} />
+export default (props) => <button {...props} style={style2} />
