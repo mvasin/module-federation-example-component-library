@@ -1,9 +1,11 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 
-module.exports = {
+module.exports = (_, {mode}) => ({
   output: {
-    publicPath: "http://localhost:8081/",
+    publicPath: mode === 'production'
+      ? "https://module-federation-example-component-library.vercel.app/"
+      : "http://localhost:8081/",
   },
 
   resolve: {
@@ -40,4 +42,4 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
-}
+})
