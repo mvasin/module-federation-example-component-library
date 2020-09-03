@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
+    "serve": "serve dist",
     "build:dev": "webpack --mode development",
     "start": "webpack-dev-server --open --mode development",
     "start:live": "webpack-dev-server --open --mode development --liveReload"
@@ -14,6 +15,7 @@
     "@babel/preset-react": "7.9.4",
     "babel-loader": "8.1.0",
     "html-webpack-plugin": "git://github.com/ScriptedAlchemy/html-webpack-plugin#db1e0cb",
+    "serve": "^11.3.2",
     "webpack": "5.0.0-beta.29",
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "3.11.0"
