@@ -1,0 +1,1 @@
+Check out https://github.com/mvasin/module-federation-example-app for the readme.
