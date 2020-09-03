@@ -24,4 +24,4 @@ const style2 = {
 }
 
 
-export default (props) => <button {...props} style={style2} />
+export default (props) => <button {...props} style={style1} />
