@@ -11,7 +11,7 @@ const style1 = {
   fontSize: "16px"
 }
 
-const style2= {
+const style2 = {
   backgroundColor: "#4CAF50",
   border: "none",
   color: "white",
